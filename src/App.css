@@ -1,0 +1,281 @@
+ 
+*{
+  padding: 0%;
+  margin: 0%;
+
+}
+ 
+.mainTender{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0F0F0F;
+  
+ 
+}
+.ParentTender{
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  width: 20%;
+  height: 70vh;
+  border-radius: 13px;
+  cursor: pointer;
+  padding: 3px;
+  
+  position: absolute;
+ 
+ 
+ 
+}
+.moveleft{
+   animation: SwipeLeft 0.5s ease forwards;
+}
+@keyframes SwipeLeft {
+  from{
+     opacity:1;
+     transform: translateX(0px);  
+  }to{
+    transform: translateX(-400px);
+    opacity:0;
+    
+  }
+} 
+    
+
+
+
+
+
+.rightmovematch{
+   animation: swiperight 0.5s ease forwards;
+}
+@keyframes swiperight {
+  from{
+     opacity:1;
+     transform: translateX(0px);  
+  }to{
+    transform: translateX(400px);
+    opacity:0;
+   
+  }
+} 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+.clientInfo{
+ margin-top: 6px;
+ margin-left: 3px;
+}
+
+.firstinfo{
+ 
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.verifyed{
+  margin-top: 5px;
+      img{
+            width: 17px;
+            height: 17px;
+      }
+}
+ 
+.location{
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size:12px;
+  margin-top: 3px;
+   img{
+            width: 15px;
+            height: 15px;
+      }
+}
+.optionMatching{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  
+}
+
+.optionMatching .custom{
+ background-color: #000;
+ border-radius: 100%;
+ width: 40px;
+ height: 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ img{
+  width:66%;
+  height: 100%;
+  object-fit: contain;
+ }
+
+
+}
+
+.custom:hover{
+  transform: scale(1.1);
+}
+.off{
+  display: none;
+}
+
+.on{
+
+  border: 2px solid #0fe48f;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    position: absolute;
+    z-index: 99;
+
+  h2{
+   color: #14dd8d;
+   padding: 2px;
+   font-weight: bold;
+  
+
+  }
+  
+}
+
+
+
+.off1{
+  display: none;
+}
+
+.on1{
+
+  border: 2px solid rgb(241, 14, 14);
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+    position: absolute;
+    z-index: 99;
+    margin-left: 3px;
+
+  h2{
+   color: rgb(241, 14, 14);
+   padding: 2px;
+   font-weight: bold;
+  
+
+  }
+  
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+ .ParentTender{
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  width: 60%;
+  height: 79vh;
+  border-radius: 13px;
+  cursor: pointer;
+  padding: 3px;
+  
+  position: absolute;
+ 
+ 
+ 
+}
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+  
+}

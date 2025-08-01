@@ -1,0 +1,62 @@
+    [
+  {
+    id: 0,
+    color: "red",
+    name: "Ghaith",
+    img: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg"
+  },
+  {
+    id: 1,
+    color: "orange",
+    name: "Fedi",
+    img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+  },
+  {
+    id: 2,
+    color: "blue",
+    name: "Ameni",
+    img: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg"
+  },
+  {
+    id: 3,
+    color: "green",
+    name: "Nesserine",
+    img: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg"
+  },
+  {
+    id: 4,
+    color: "purple",
+    name: "Doua",
+    img: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
+  },
+  {
+    id: 5,
+    color: "red",
+    name: "Mohamed",
+    img: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
+  },
+  {
+    id: 6,
+    color: "orange",
+    name: "Ahmed",
+    img: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg"
+  },
+  {
+    id: 7,
+    color: "blue",
+    name: "Aymen",
+    img: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg"
+  },
+  {
+    id: 8,
+    color: "green",
+    name: "Sarah",
+    img: "https://images.pexels.com/photos/1130624/pexels-photo-1130624.jpeg"
+  },
+  {
+    id: 9,
+    color: "purple",
+    name: "Mouna",
+    img: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg"
+  }
+  ]

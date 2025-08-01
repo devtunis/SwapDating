@@ -8,6 +8,10 @@ import 'swiper/css/pagination';
 import './styles.css';
 import { pagination } from './StoreTenderFunction.js';
 import { Route,  Routes as Router} from 'react-router-dom';
+import RouteAuth from './Authentication/RouteAuth.jsx';
+import Auth from './Authentication/Auth.jsx';
+import Register from './Authentication/Register.jsx';
+import Socksettest from './Socksettest.jsx';
 const App = () => {
 
   
@@ -127,7 +131,7 @@ setloadingmatching2(false)
     <>
      
  <Router>
-  <Route path="/" element={<>  <div className='mainTender'>
+  <Route path="/home" element={<>  <div className='mainTender'>
         {db.length !== 0 ? (
           db.map((user, index) => (
             <div
@@ -183,8 +187,16 @@ setloadingmatching2(false)
           <p style={{color:"white",fontWeight:"bold",fontSize:"30px"}}>We didn't find any matches for you.</p>
         )}
       </div> </>  }/>
-
       
+
+     <Route path='/' element={<><RouteAuth/></>} >
+     <Route index element={<Auth />} />
+     <Route path="auth" element={<Auth />} />
+     <Route path="register" element={<Register/> } />
+    </Route>
+
+
+   <Route path='/socket' element={<Socksettest/>}/>
  </Router>
 
     </>

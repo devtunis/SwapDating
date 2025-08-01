@@ -1,0 +1,28 @@
+.routeslink{
+      background-color: rgb(17, 14, 13);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      font-weight: bold;
+      text-transform: capitalize;
+      padding: 10px;
+      a{
+            text-decoration: none;
+            
+      }
+       
+      
+}
+.active{
+   color: rgb(222, 223, 222);
+}
+
+ 
+.auth{
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      gap: 10px;
+}

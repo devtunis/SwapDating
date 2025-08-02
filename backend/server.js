@@ -30,6 +30,7 @@ const io = new Server(server,{
         origin: ['http://localhost:5173','http://localhost:3000'],
         
         methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        credentials: true
     }
 });
 
@@ -41,33 +42,28 @@ app.get("/",(req,res)=>{
       res.send(["server  work"])
 })
 
-let connected = {} 
+ 
  
 
 
 io.on("connection",(socket)=>{
-    
-       connected[socket.id] = socket.id
-       console.log(connected)
+           
+
+       socket.on("c",(l)=>console.log(l))
+
+
 
       socket.on("disconnect", (reason) => {
-      delete connected[socket.id]
-      io.emit("userConnectd",connected)
+    
       console.log(`socket ${socket.id} disconnected due to ${reason}`);
   });
+ 
 })
 
  
 // Authentication [login,register]
-app.use("/Authentication",useregister(io,connected))
+app.use("/Authentication",useregister(io))
 app.use("/Authentication",loginregiser)
-
-
-
-
-
-
-
 
 
 

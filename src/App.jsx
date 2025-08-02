@@ -191,8 +191,8 @@ setloadingmatching2(false)
 
      <Route path='/' element={<><RouteAuth/></>} >
      <Route index element={<Auth />} />
-     <Route path="auth" element={<Auth />} />
-     <Route path="register" element={<Register/> } />
+     <Route path="/auth" element={<Auth />} />
+     <Route path="/register" element={<Register/> } />
     </Route>
 
 

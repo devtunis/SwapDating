@@ -3,7 +3,7 @@ import UserModel from "../model/UserModel.js";
 
 const SECRET_KEY = "supersecretkey123";
 
-const registerUser = async (req, res, io, connected) => {
+const registerUser = async (req, res,io) => {
   const { username, email, password, refrence } = req.body;
 
   // تحقق من البيانات
@@ -31,8 +31,7 @@ const registerUser = async (req, res, io, connected) => {
       maxAge: 3600000
     });
 
-    io.emit("userConnected", connected); 
-
+  
     return res.status(201).json({ token, message: "تم إنشاء المستخدم بنجاح" });
 
   } catch (error) {

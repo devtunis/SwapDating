@@ -26,9 +26,9 @@ if(data){
   return (
     <> 
       <div className='auth'>
-      <input type='text' value={"johnedoe"} placeholder='Username' ref={Username}/>
-      <input type='text' value={"johnedoe@gmail.com"} placeholder='email' ref={EmailRef}/>
-      <input type='text' value={"11111"} placeholder='password' ref={PasswordRef}/>
+      <input type='text' placeholder='Username' ref={Username}/>
+      <input type='text'  placeholder='email' ref={EmailRef}/>
+      <input type='text'  placeholder='password' ref={PasswordRef}/>
       <button onClick={()=>Regiser()}>register</button>
     </div>
     </>

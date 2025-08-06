@@ -14,7 +14,7 @@ import Register from './Authentication/Register.jsx';
 import Socksettest from './Socksettest.jsx';
 const App = () => {
 
-  
+   
   const [db, setdb] = useState([
   {
     id: 0,

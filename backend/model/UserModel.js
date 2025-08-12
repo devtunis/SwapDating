@@ -10,7 +10,8 @@ const userSchema = new mongoose.Schema({
   username :{type:String},
   name: { type: String },
   email: { type: String },
-  password:{type:String}
+  password:{type:String},
+  img : {type : String}
  
 }, { timestamps: true });
 

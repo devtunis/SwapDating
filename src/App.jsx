@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import { swapfunctionnormal } from './StoreTenderFunction.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,8 +12,10 @@ import RouteAuth from './Authentication/RouteAuth.jsx';
 import Auth from './Authentication/Auth.jsx';
 import Register from './Authentication/Register.jsx';
 import Socksettest from './Socksettest.jsx';
+import MatchTrue from './MatchingCompoenent/MatchTrue.jsx';
+ 
 const App = () => {
-
+  
   
   const [db, setdb] = useState([
   {
@@ -131,7 +133,7 @@ setloadingmatching2(false)
     <>
      
  <Router>
-  <Route path="/home" element={<>  <div className='mainTender'>
+  <Route path="/home" element={<> <MatchTrue close={true}/>   <div className='mainTender'>
         {db.length !== 0 ? (
           db.map((user, index) => (
             <div
@@ -156,9 +158,9 @@ setloadingmatching2(false)
 
 
               <Swiper pagination={pagination} modules={[Pagination]} className="mySwiper">
-                <SwiperSlide><img src={user.img} alt="slide" style={{ width: "100%", height: "100%", borderRadius: "10px" }} /></SwiperSlide>
-                <SwiperSlide><img src={user.img} alt="slide" style={{ width: "100%", height: "100%", borderRadius: "10px" }} /></SwiperSlide>
-                <SwiperSlide><img src={user.img} alt="slide" style={{ width: "100%", height: "100%", borderRadius: "10px" }} /></SwiperSlide>
+                <SwiperSlide><img src={"https://res.cloudinary.com/dfmdgsiid/image/upload/fl_preserve_transparency/v1752493860/wxlx6bmjgytvowshfurj.jpg?_s=public-apps"} loading='lazy' alt="slide" style={{ width: "100%", height: "100%", borderRadius: "10px" }} /></SwiperSlide>
+                <SwiperSlide><img src={"https://res.cloudinary.com/dfmdgsiid/image/upload/fl_preserve_transparency/v1752493860/wxlx6bmjgytvowshfurj.jpg?_s=public-apps"} loading='lazy' alt="slide" style={{ width: "100%", height: "100%", borderRadius: "10px" }} /></SwiperSlide>
+                <SwiperSlide><img src={"https://res.cloudinary.com/dfmdgsiid/image/upload/fl_preserve_transparency/v1752493860/wxlx6bmjgytvowshfurj.jpg?_s=public-apps"} loading='lazy' alt="slide" style={{ width: "100%", height: "100%", borderRadius: "10px" }} /></SwiperSlide>
           
               </Swiper>
 
@@ -166,20 +168,20 @@ setloadingmatching2(false)
                 <div className="firstinfo">
                   <div className="title"><h2 >{user.name}</h2> </div>
                   <div className="age">20</div>
-                  <div className='verifyed'><img src='./verified.png' alt="verified" /></div>
+                  <div className='verifyed'><img src='./verified.png' loading='lazy' alt="verified" /></div>
                 </div>
                 <div className='location'>
-                  <div><img src='./location.png' alt="location" /></div>
+                  <div><img src='./location.png' loading='lazy' alt="location" /></div>
                   <div>1km away</div>
                 </div>
               </div>
 
               <div className='optionMatching'>
-                <div className='custom'><img src='./copimages/rotate.png' alt="rotate" /></div>
-                { loadingmatching ?  <div className='custom'   ><img src='./copimages/close.png' alt="close" /></div>  :  <div className='custom' onClick={()=>TranslateCardAndDoEffect(user, index) }  ><img src='./copimages/close.png' alt="close" /></div>}
+                <div className='custom'><img src='./copimages/rotate.png' loading='lazy' alt="rotate" /></div>
+                { loadingmatching ?  <div className='custom'   ><img src='./copimages/close.png' loading='lazy' alt="close" /></div>  :  <div className='custom' onClick={()=>TranslateCardAndDoEffect(user, index) }  ><img src='./copimages/close.png' loading='lazy' alt="close" /></div>}
                 <div className='custom'><img src='./copimages/star.png' alt="star" /></div>
-               {loadingmatching ?   <div className='custom' ><img src='./copimages/heart.png' alt="heart" /></div>    :    <div className='custom' onClick={() => match(user,index)}><img src='./copimages/heart.png' alt="heart" /></div>  }
-                <div className='custom'><img src='./copimages/flash.png' alt="flash" /></div>
+               {loadingmatching ?   <div className='custom' ><img src='./copimages/heart.png' loading='lazy' alt="heart" /></div>    :    <div className='custom' onClick={() => match(user,index)}><img src='./copimages/heart.png' loading='lazy' alt="heart" /></div>  }
+                <div className='custom'><img src='./copimages/flash.png' loading='lazy' alt="flash" /></div>
               </div>
             </div>
           ))
@@ -197,6 +199,7 @@ setloadingmatching2(false)
 
 
    <Route path='/socket' element={<Socksettest/>}/>
+   <Route path='/test' element={<MatchTrue/>}/>
  </Router>
 
     </>

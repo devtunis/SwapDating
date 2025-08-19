@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+ import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import { swapfunctionnormal } from './StoreTenderFunction.js';
 import { Swiper, SwiperSlide } from 'swiper/react';

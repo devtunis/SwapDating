@@ -13,7 +13,7 @@ import Auth from './Authentication/Auth.jsx';
 import Register from './Authentication/Register.jsx';
 import Socksettest from './Socksettest.jsx';
 import MatchTrue from './MatchingCompoenent/MatchTrue.jsx';
- 
+   
 const App = () => {
   
   
